@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+#container{
+	min-height: 100%;
+	background-color: #ddd;
+}
+
+nav{
+	background-color: #262626;
+	height: 80px;
+}
+
+nav .navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	line-height: 80px;
+}
+
+nav .logo{
+	margin-left: 30px;
+}
+
+nav .logo a{
+	color: white;
+	font-size: 35px;
+	text-decoration: none;
+	font-family: bignoodletitling;
+	letter-spacing: 3px;
+}
+
+nav .navbuttons{
+	display: inline-flex;
+	margin-right: 30px;
+}
+
+nav .navbuttons li{
+	text-decoration: none;
+	list-style: none;
+}
+
+nav .navbuttons li a{
+	color: white;
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-family: bignoodletitling;
+	padding: 5px 15px;
+	transition: all 0.3s ease;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+nav .navbuttons li a:hover{
+	background: #ddd;
+	color: #262626;
+}
+
+
+
+#main{
+	overflow: auto;
+	padding-bottom: 60px;
+}
+
+.section-1{
+ 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/covidbg.jpg');
+ 	text-align: center;
+ 	height: 450px;
+ 	background-position: center;
+}
+
+.section-1 h1{
+	font-family: bignoodletitling;
+	color: white;
+	letter-spacing: 5px;
+	font-size: 50px;
+	padding-top: 180px;
+}
+
+.section-2{
+	height: 200px;
+ 	background-color: cadetblue;
+ 	text-align: center;
+ 	justify-content: space-around;
+ 	display: flex;
+ 	padding-top: 50px;
+}
+
+.section-2 img{
+	height: 100px;
+	width: auto;
+}
+
+.section-2 .col-1{
+	font-family: poppins;
+	font-size: 10px;	
+}
+
+.section-3{
+	height: 200px;
+ 	background-color: #ddd;
+ 	text-align: center;
+ 	justify-content: space-around;
+ 	display: flex;
+ 	padding-top: 50px;
+}
+
+.section-3 img{
+	height: 100px;
+	width: auto;
+}
+
+.section-3 .col-1{
+	font-family: poppins;
+	font-size: 10px;	
+}
+
+
+.section-4{
+ 	background-color: #ddd;
+ 	text-align: center;
+ 	padding-bottom: 20px;
+}
+
+.section-4 img{
+	width: auto;
+	height: 60px;
+	padding: 20px 10px 10px;
+}
+
+
+
+#footer{
+	background-color: #262626;
+	position: relative;
+	height: 60px;
+	margin-top: -60px;
+	clear: both;
+}
+#footer p{
+	color: white;
+	font-family: poppins;
+	text-align: center;
+	padding-top: 20px;
+}

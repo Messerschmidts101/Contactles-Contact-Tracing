@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=en>
+    <%- include('../../html/headOpening'); %>
+        <link rel="stylesheet" href="../css/tree.css">
+        <link rel="stylesheet" href="../../../node_modules/orgchart/src/css/jquery.orgchart.css">
+    <%- include('../../html/headClosing'); %>
+    
+    
+    <body>
+        <%- include('../../html/navigation') %> 
+        <div class="section-3">
+            <main class="content-area">
+                <div class="col">
+                    <form id='levelInputForm'>
+                        <label for="levelInput">Level</label>
+                        <input type="text" name="level" id="levelInput" placeholder="levels[ 1 - 5 ]">
+                            <button id="levelBtn" href="#">Search</button>
+                    </form>
+                    <form id='searchInputForm'>
+                        <label for="searchInput">Search</label>
+                        <input type="text" name="search" id="searchInput" placeholder="Search...">
+                            <button id="searchBtn" href="#">Search</button>
+                    </form>
+                    <button id="tableBtn" href="#">Table</button>
+                </div>
+                <h1>Contact Trace Tree</h1>
+                <div id="chart-container"></div>
+            </main>
+        </div>
+      <!-- Problem: the code is working if we use 2 script of the jquery or using another from remote and the local -->
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+      <!-- <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+  
+      <script type="text/javascript" src="../../js/require.js"></script>
+      <script type="text/javascript" src="../../../node_modules/html2canvas/dist/html2canvas.min.js"></script>
+      <script type="text/javascript" src="../../../node_modules/jspdf/dist/jspdf.umd.min.js"></script>
+      <!-- <script type="text/javascript" src="../node_modules/jquery-mockjax/dist/jquery.mockjax.min.js"></script> -->
+      <script type="text/javascript" src="../../../node_modules/orgchart/dist/js/jquery.orgchart.min.js"></script>
+      <script type="text/javascript" src="../js/treeRenderer.js"></script>
+      <%- include('../../html/footer'); %>
+    </body>
+</html>

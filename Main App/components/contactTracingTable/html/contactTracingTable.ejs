@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang=en>
+    <%- include('../../html/headOpening'); %> 
+      <link rel="stylesheet" href="../css/data.css">
+    <%- include('../../html/headOpening'); %> 
+
+    <body>
+        <div id="container">
+            <div id="main">
+                <div class="content-area">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="evvbuttons"><a id="printTblBtn" href="#" class="btn">Print</a></div>
+                            <div class="evvbuttons"><a id="sortBtn" href="#" class="btn">Sort</a></div>
+                            <div class="evvbuttons">
+                                <select name="Fields" id="field" class='option1'>
+                                <option value="name">Name</option>
+                                <option value="date">Date</option>
+                                </select>
+                            </div>
+                            
+                            <div class="evvbuttons">
+                                <select name="Ordering" id="order" class="option2">
+                                <option value="ascending">Ascending</option>
+                                <option value="descending">Descending</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <div class="col-2">
+                            <div class="row-1">
+                                <input type="text" name="search" id="searchInput" placeholder="Search...">
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+
+                    <h2>Contact Tracing Table</h2>
+                    <div class="table-area">
+                        <table id="visitTBL" class="data-tbl">
+                        <thead>
+                            <!-- headers will be inserted here -->
+                        </thead>
+                        <tbody>
+                            <!-- data will be inserted here -->
+                        </tbody>
+
+                        </table>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <script src="../../js/require.js"></script>
+        <script src="../js/contactTracingTableRenderer.js"></script>
+        <%- include('../../html/footer'); %> 
+
+    </body>
+</html>

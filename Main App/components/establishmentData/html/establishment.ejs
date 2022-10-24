@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=en>
+
+    <%- include('../../html/headOpening'); %>
+        <link rel="stylesheet" href="../css/data.css">
+    <%- include('../../html/headClosing'); %>
+    
+    <body>
+        <%- include('../../html/navigation'); %> 
+        <div id="main">
+            <%- include('./dataNavigation'); %> 
+            <h2>Establishments Table</h2>
+            <div class="table-area">
+                <table id="establishmentTBL" class="data-tbl">
+                    <thead>
+                        
+                    </thead>
+                    <tbody>
+                            <!-- data will be inserted here -->
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <script src="../../js/require.js"></script>
+        <script src="../js/establishmentRenderer.js"></script>
+        <script src="../js/dataNavigationRenderer.js"></script>
+        <%- include('../../html/footer'); %> 
+    </body>
+</html>

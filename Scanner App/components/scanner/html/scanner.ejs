@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<%- include('../../html/headOpening.ejs'); %>
+		<link rel="stylesheet" href="../css/scanner.css">
+	<%- include('../../html/headOpening.ejs'); %> 
+	<body>
+	<!-- import the navigation bar -->
+
+		<div id="container">
+			<%- include('../../html/navigation.ejs'); %> 
+			<div id="main">
+				<div class="scanner-area">
+					<video id='video' width="600"></video>
+				</div>
+				<div class="buttons-area">
+					<div class="row">
+						<div class="col">
+							<a id='entryScanBtn' href="" class="btn1">Entrance</a>
+						</div>
+						<div class="col">
+							<a id='stopScanBtn' href="" class="btn2">Stop</a>
+						</div>
+						<div class="col">
+							<a id='exitScanBtn' href="" class="btn3">Exit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%- include('../../html/footer'); %> 
+		<script src="../../js/require.js"></script>
+		<script src="../../js/navigationRenderer.js"></script>
+		<script src="../js/scannerRenderer.js"></script>
+	</body>
+</html>

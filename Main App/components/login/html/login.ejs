@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang=en>
+        <%- include('../../html/headOpening'); %> 
+            <link rel="stylesheet" href="../css/registrationForm.css">
+        <%- include('../../html/headCLosing'); %>
+        
+        <body>
+            <div id="container">
+                <div id="main">
+                    <div class="content-area">
+                        <div class="title">Login</div>
+                        <form id="loginForm">
+                            <div class="establishment-details">
+                                <div class="input-box">
+                                    <span class="details">Username</span>
+                                    <input id="usernameInput" type="text" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Password</span>
+                                    <input id="passwordInput" type="password" required>
+                                </div>
+                            </div>
+                            
+                            <div class="button">
+                                <input type="submit" value="Register">
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script src="../../js/require.js"></script>
+            <script src="../js/loginRenderer.js"></script>
+        </body>
+    </html>

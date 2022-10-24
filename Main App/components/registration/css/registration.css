@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+#container{
+	min-height: 100%;
+	background-color: #ddd;
+}
+
+nav{
+	background-color: #262626;
+	height: 80px;
+}
+
+nav .navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	line-height: 80px;
+}
+
+nav .logo{
+	margin-left: 30px;
+}
+
+nav .logo a{
+	color: white;
+	font-size: 35px;
+	text-decoration: none;
+	font-family: bignoodletitling;
+	letter-spacing: 3px;
+}
+
+nav .navbuttons{
+	display: inline-flex;
+	margin-right: 30px;
+}
+
+nav .navbuttons li{
+	text-decoration: none;
+	list-style: none;
+}
+
+nav .navbuttons li a{
+	color: white;
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-family: bignoodletitling;
+	padding: 5px 15px;
+	transition: all 0.3s ease;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+nav .navbuttons li a:hover{
+	background: #ddd;
+	color: #262626;
+}
+
+
+
+#main{
+	overflow: auto;
+	padding-bottom: 50px;
+	height: 500px;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	margin-left: 28%;
+	margin-top: 200px;
+	font-family: poppins;
+}
+
+.btn1{
+	display: inline-block;										
+	background: #ff523b;
+	color: #fff;
+	padding: 10px 30px;		
+	margin: 15px;									
+	border-radius: 30px;
+	transition: background 0.2s;	
+	text-decoration: none;
+}
+
+.btn2{
+	display: inline-block;										
+	background: #ff523b;
+	color: #fff;
+	padding: 10px 55px;	
+	margin: 15px;										
+	border-radius: 30px;
+	transition: background 0.2s;	
+	text-decoration: none;
+}
+
+.btn3{
+	display: inline-block;										
+	background: #ff523b;
+	color: #fff;
+	padding: 10px 55px;											
+	margin: 15px;
+	border-radius: 30px;
+	transition: background 0.2s;	
+	text-decoration: none;
+}
+
+.btn1:hover{														/*button bg color changes when cursor is on the button*/
+	background: #dd1c00;
+}
+
+.btn2:hover{														/*button bg color changes when cursor is on the button*/
+	background: #dd1c00;
+}
+
+.btn3:hover{														/*button bg color changes when cursor is on the button*/
+	background: #dd1c00;
+}
+
+
+#footer{
+	background-color: #262626;
+	position: relative;
+	height: 50px;
+	margin-top: -50px;
+	clear: both;
+}
+#footer p{
+	color: white;
+	font-family: poppins;
+	text-align: center;
+	padding-top: 10px;
+}

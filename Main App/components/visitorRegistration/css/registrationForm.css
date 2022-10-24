@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+#container{
+	min-height: 100%;
+	background-color: #ddd;
+}
+
+nav{
+	background-color: #262626;
+	height: 80px;
+}
+
+nav .navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	line-height: 80px;
+}
+
+nav .logo{
+	margin-left: 30px;
+}
+
+nav .logo a{
+	color: white;
+	font-size: 35px;
+	text-decoration: none;
+	font-family: bignoodletitling;
+	letter-spacing: 3px;
+}
+
+nav .navbuttons{
+	display: inline-flex;
+	margin-right: 30px;
+}
+
+nav .navbuttons li{
+	text-decoration: none;
+	list-style: none;
+}
+
+nav .navbuttons li a{
+	color: white;
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-family: bignoodletitling;
+	padding: 5px 15px;
+	transition: all 0.3s ease;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+nav .navbuttons li a:hover{
+	background: #ddd;
+	color: #262626;
+}
+
+
+
+#main{
+	overflow: auto;
+	padding-bottom: 60px;
+}
+
+.content-area{
+	position: relative;
+	max-width: 350px;
+	width: 100%;
+	background: #fff;
+	padding: 15px 25px;
+	border-radius: 5px;
+	margin: 20px auto 20px;
+}
+
+.content-area .title{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+	font-family: poppins;
+}
+
+.content-area .title:before{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 30px;
+	background: #ff523b;
+	left: 0;
+	bottom: 0;
+}
+
+.content-area form .establishment-details{
+	display: block;
+	justify-content: space-between;
+	margin-top: 20px;
+	font-family: poppins;
+}
+
+form .establishment-details .input-box{
+	margin-bottom: 1px;
+	width: 330px;
+}
+
+.establishment-details .input-box .details{
+	font-weight: 500;
+	margin-bottom: 3px;
+	display: block;
+}
+
+.establishment-details .input-box input{
+	height: 30px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 15px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+}
+
+.establishment-details .input-box input:focus, .establishment-details .input-box input:valid{
+	border-color: #ff523b;
+}
+
+form .button{
+	height: 45px;
+	margin: 20px 0;
+}
+
+form .button input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: #ff523b;
+}
+
+form .button input:hover{
+	background: #dd1c00;
+	cursor: pointer;
+}
+
+#footer{
+	background-color: #262626;
+	position: relative;
+	height: 60px;
+	margin-top: -60px;
+	clear: both;
+}
+#footer p{
+	color: white;
+	font-family: poppins;
+	text-align: center;
+	padding-top: 13px;
+}

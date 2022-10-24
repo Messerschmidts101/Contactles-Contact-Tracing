@@ -1,0 +1,27 @@
+{
+  "name": "scanner",
+  "version": "1.0.0",
+  "description": "This is a scanner for the contact tracing app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-win": "electron-packager . Scanner --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Scanner\""
+  },
+  "keywords": [
+    "scanner",
+    "qrcode"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs-electron": "^2.1.1",
+    "jquery": "^3.6.0",
+    "mongoose": "^5.12.14",
+    "qr-scanner": "^1.2.0"
+  },
+  "devDependencies": {
+    "electron": "^13.1.3",
+    "electron-packager": "^15.2.0"
+  }
+}

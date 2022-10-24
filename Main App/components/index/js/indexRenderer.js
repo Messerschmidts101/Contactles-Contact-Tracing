@@ -1,0 +1,3 @@
+/*
+  This file contains all the javascript codes for the index page
+*/

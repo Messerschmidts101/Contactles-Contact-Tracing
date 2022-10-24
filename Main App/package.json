@@ -1,0 +1,40 @@
+{
+  "name": "project-daa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . \"Contactless Contact Tracing\" --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Contactless Contact Tracing\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kathulhur/PROJECT-DAA.git"
+  },
+  "keywords": [
+    "contact-tracing",
+    "scanner",
+    "covid-19"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kathulhur/PROJECT-DAA/issues"
+  },
+  "homepage": "https://github.com/kathulhur/PROJECT-DAA#readme",
+  "devDependencies": {
+    "electron": "^13.0.1",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "ejs-electron": "^2.1.1",
+    "jquery": "^3.6.0",
+    "mongoose": "^5.12.12",
+    "orgchart": "^3.1.1",
+    "qr-scanner": "^1.2.0",
+    "qrcode": "^1.4.4"
+  }
+}

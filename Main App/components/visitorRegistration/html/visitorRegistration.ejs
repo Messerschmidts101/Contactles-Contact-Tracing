@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang=en>
+        <%- include('../../html/headOpening'); %>
+            <link rel="stylesheet" href="../css/registrationForm.css">
+        <%- include('../../html/headClosing'); %>
+    
+        <body>
+            <%- include('../../html/navigation'); %> 
+
+            <div id="main">
+                <div class="content-area">
+                    <div class="title">Visitor</div>
+                    <form id="visitorForm">
+                        <div class="establishment-details">
+                            <div class="input-box">
+                                <span class="details">Name</span>
+                                <input id="nameInput" type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Address</span>
+                                <input id="addressInput" type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Contact Number</span>
+                                <input id="contactNumberInput" type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email</span>
+                                <input id="emailInput" type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Covid Status</span>
+                                <input id="covidStatusInput" type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Vaccine</span>
+                                <input id="vaccineInput" type="text" required>
+                            </div>
+                        </div>
+                        
+                        <div class="button">
+                            <input id='submitVisitor' type="submit" value="Register">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+            
+            <script src="../../js/require.js"></script>
+            <script src="../js/visitorRegistrationRenderer.js"></script>
+            <%- include('../../html/footer'); %> 
+        </body>
+    </html>
+

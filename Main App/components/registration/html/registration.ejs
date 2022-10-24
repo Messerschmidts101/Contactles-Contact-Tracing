@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html lang=en>
+	<%- include('../../html/headOpening'); %> 
+		<link rel="stylesheet" href="../css/registration.css">
+	<%- include('../../html/headClosing'); %>
+    
+	<body>
+		<%- include('../../html/navigation'); %> 
+		
+		<div id="main">
+			<div class="row">
+				<div class="col">
+					<a id="establishmentRegistrationButton" href="Establishment.html" class="btn1">Establishment</a>
+				</div>
+				<div class="col">
+					<a id="visitorRegistrationButton" href="Visitor.html" class="btn2">Visitor</a>
+				</div>
+				<div class="col">
+					<a id="adminRegistrationButton" href="Admin.html" class="btn3">Admin</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="../../js/require.js"></script>
+		<script src="../js/registrationRenderer.js"></script>
+		<%- include('../../html/footer'); %>
+		
+	
+	</body>
+  </html>
